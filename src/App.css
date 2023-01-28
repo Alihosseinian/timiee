@@ -44,20 +44,26 @@ html {
 
 .image-box {
   width: 50%;
+  height: 98%;
   margin: 5px;
   padding: 0px 5px;
   overflow: hidden;
   box-sizing: border-box;
-  border-radius: 20px;
-}
-
-.image-box img {
-  border-radius: 20px;
+  border-radius: 30px;
+  background-image: url("./pic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .login-form {
   width: 50%;
   margin: 10px;
+}
+
+.question {
+  margin-right: 10px;
+  margin-bottom: 30px;
+  padding-top: 0;
 }
 
 .question p {
@@ -92,34 +98,68 @@ p {
 
 input {
   border: none;
-  width: 70%;
+  width: 67%;
   margin: 8px 0;
   padding: 15px 15px;
   border-radius: 8px;
   color: gray;
 }
+.password-container {
+  width: 76%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.password {
+  width: 100%;
+}
+.eye_slash {
+  position: absolute;
+  right: 15px;
+}
 
-.submit:active {
-  color: yellow;
-  text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.65);
+.eye_slash:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+    brightness(104%) contrast(97%);
+  cursor: pointer;
 }
 
 .recovery-password {
   width: 75%;
 }
+.recovery-password:hover {
+  text-decoration-line: underline;
+  transition: 0.1s;
+}
 
 .recovery-password a {
   text-decoration: none;
-  padding: 15px 0px 15px;
+  padding: 3px 0px 15px;
   display: flex;
   justify-content: flex-end;
   font-size: 13px;
+  color: #7d7c8b;
 }
 
 .submit {
+  width: 76%;
   background-color: #ea5143;
   color: white;
   box-shadow: 0 10px 25px -4px rgb(240, 167, 167);
+  opacity: 0.9;
+  cursor: pointer;
+}
+.submit:active {
+  color: yellow;
+  text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.65);
+}
+
+.submit:hover {
+  opacity: 1;
+  font-size: 1em;
+  transform: scale(1);
+  transition: 0.2s ease-out;
 }
 
 .footer {
@@ -164,21 +204,29 @@ input {
   align-items: center;
 }
 
-.icon :hover {
-  background-color: white;
-}
-
 .gmail,
 .apple-id,
 .facebook {
-  border: 2px solid white;
+  border: 1px solid white;
   width: 60px;
-  height: 50px;
+  height: 38px;
   margin: 2px 10px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.gmail:hover,
+.apple-id:hover,
+.facebook:hover {
+  background-color: white;
+  font-size: 1em;
+  transform: scale(1.2);
+  transition: all 0.5s;
 }
 
 /* // landsacape phone + <= 768  */
