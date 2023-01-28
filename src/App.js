@@ -29,7 +29,7 @@ function App() {
             <div class="password-container">
               <input
                 type="password"
-                placeholder="password"
+                placeholder="Password"
                 class="password"
                 required
               ></input>
