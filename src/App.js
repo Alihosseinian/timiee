@@ -6,26 +6,28 @@ import eye_slashLogo from "./assets/eye-slash.svg";
 
 function App() {
   return (
+    <div className="login-page">
     <div className="container">
       <div className="image-box" />
       <div className="login-form">
         <div className="question">
-          <p>
+          <span>
             Not a member?
-            <span> </span>
-            <span> </span>
             <a className="register" href="#">
               Resgister now
             </a>
-          </p>
+          </span>
         </div>
         <div className="form">
+          <div className="section">
           <div className="title">
             <h2>Hello Again!</h2>
-            <p>wellcome back you've been missed!</p>
+            <p>Wellcome back you've been missed!</p>
           </div>
           <form className="input-box">
-            <input type="text" placeholder="Enter username" required></input>
+            <div className="username-container">
+            <input type="text" placeholder="Enter username" className="username"required></input>
+            </div>
             <div className="password-container">
               <input
                 type="password"
@@ -36,12 +38,16 @@ function App() {
               <img src={eye_slashLogo} alt="eye slashLogo" className="eye_slash" />
             </div>
             <div className="recovery-password">
-              <a href="#">Recovery Password</a>
+              <button  className="recovery-button" href="#">Recovery Password</button>
             </div>
             <input type="submit" className="submit" value="Sign In"></input>
           </form>
           <div className="footer">
-            <p className="line">Or continue with</p>
+            <div className="tittle-continue">
+            <span className="line">
+              <span className="inner">Or continue with</span>
+            </span>
+            </div>
             <div className="icon">
               <div className="gmail">
                 <img src={gmailLogo} alt="gmailLogo" />
@@ -54,10 +60,11 @@ function App() {
               </div>
             </div>
           </div>
+          </div>
         </div>
       </div>
     </div>
+    </div>
   );
 }
-
 export default App;
