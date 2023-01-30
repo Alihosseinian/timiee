@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/timiee/static/css/main.34ea4e23.css",
-    "main.js": "/timiee/static/js/main.388ec9cc.js",
+    "main.css": "/timiee/static/css/main.40452630.css",
+    "main.js": "/timiee/static/js/main.aa06e0d0.js",
     "static/js/787.28cb0dcd.chunk.js": "/timiee/static/js/787.28cb0dcd.chunk.js",
     "static/media/Mulish-VariableFont_wght.ttf": "/timiee/static/media/Mulish-VariableFont_wght.d8a9a18cece4ed88ac76.ttf",
     "static/media/pic.jpg": "/timiee/static/media/pic.8a18a7315b99149c43d5.jpg",
@@ -10,12 +10,12 @@
     "static/media/apple_icon.svg": "/timiee/static/media/apple_icon.f9a769050ff8f481cb8d174e483deac5.svg",
     "static/media/eye-slash.svg": "/timiee/static/media/eye-slash.3b1d24d45f36c63a871c70f8b74dbf62.svg",
     "index.html": "/timiee/index.html",
-    "main.34ea4e23.css.map": "/timiee/static/css/main.34ea4e23.css.map",
-    "main.388ec9cc.js.map": "/timiee/static/js/main.388ec9cc.js.map",
+    "main.40452630.css.map": "/timiee/static/css/main.40452630.css.map",
+    "main.aa06e0d0.js.map": "/timiee/static/js/main.aa06e0d0.js.map",
     "787.28cb0dcd.chunk.js.map": "/timiee/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.34ea4e23.css",
-    "static/js/main.388ec9cc.js"
+    "static/css/main.40452630.css",
+    "static/js/main.aa06e0d0.js"
   ]
 }
