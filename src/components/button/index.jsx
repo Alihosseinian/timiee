@@ -1,10 +1,16 @@
+/* eslint-disable react/jsx-no-duplicate-props */
+/* eslint-disable react/prop-types */
 import React from "react";
 import "./style.scss";
 
 const Button = (props) => {
   return (
-    <button className={props.className}>
-      <img src={facebookLogo} alt="facebookLogo" />
+    <button
+      className={props.className + " " + "button"}
+      type={props.type}
+      placeholder={props.placeholder}
+    >
+      {props.children}
     </button>
   );
 };

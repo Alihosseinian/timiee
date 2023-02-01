@@ -5,6 +5,7 @@ import facebookLogo from "./assets/facebook_icon.svg";
 import eye_slashLogo from "./assets/eye-slash.svg";
 
 import Inputfield from "./components/input/index";
+import Button from "./components/button/index";
 
 import "./App.css";
 
@@ -53,11 +54,9 @@ function App() {
                     Recovery Password
                   </button>
                 </div>
-                <button
-                  type="submit"
-                  className="submit"
-                  placeholder="Sign In"
-                ></button>
+                <Button className="submit" type="submit">
+                  Sign In
+                </Button>
               </form>
               <div className="footer">
                 <div className="tittle-continue">
@@ -66,15 +65,16 @@ function App() {
                   </span>
                 </div>
                 <div className="icon">
-                  <button className="gmail">
+                  <Button className="logo">
                     <img src={gmailLogo} alt="gmailLogo" />
-                  </button>
-                  <button className="apple-id">
+                  </Button>
+
+                  <Button className="logo">
                     <img src={appleLogo} alt="appleLogo" />
-                  </button>
-                  <button className="facebook">
+                  </Button>
+                  <Button className="logo">
                     <img src={facebookLogo} alt="facebookLogo" />
-                  </button>
+                  </Button>
                 </div>
               </div>
             </div>
