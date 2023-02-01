@@ -102,14 +102,7 @@ p {
   margin-top: 10px;
 }
 
-.password-container , 
-.username-container {
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .submit {
   border: none;
   width: 100%;
@@ -120,16 +113,7 @@ p {
 }
 
 
-.eye_slash {
-  position: absolute;
-  right: 15px;
-}
 
-.eye_slash:hover {
-  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
-    brightness(104%) contrast(97%);
-  cursor: pointer;
-}
 
 .recovery-password {
   width: 100%;

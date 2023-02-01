@@ -1,0 +1,12 @@
+.icon {
+  .eye_slash {
+    position: absolute;
+    right: 15px;
+
+    &:hover {
+      filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+        brightness(104%) contrast(97%);
+      cursor: pointer;
+    }
+  }
+}

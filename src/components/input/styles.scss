@@ -1,8 +1,15 @@
-input {
-  border: none;
+.input_container {
   width: 100%;
-  margin: 8px 0;
-  padding: 15px 15px;
-  border-radius: 8px;
-  color: gray;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input {
+    border: none;
+    width: 100%;
+    margin: 8px 0;
+    padding: 15px 15px;
+    border-radius: 8px;
+    color: gray;
+  }
 }

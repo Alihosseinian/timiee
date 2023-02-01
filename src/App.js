@@ -2,10 +2,11 @@
 import appleLogo from "./assets/apple_icon.svg";
 import gmailLogo from "./assets/google_icon.svg";
 import facebookLogo from "./assets/facebook_icon.svg";
-import eye_slashLogo from "./assets/eye-slash.svg";
+// import eye_slashLogo from "./assets/eye-slash.svg";
 
 import Inputfield from "./components/input/index";
 import Button from "./components/button/index";
+import Eyeslash from "./components/eyeicon/index";
 
 import "./App.css";
 
@@ -30,25 +31,18 @@ function App() {
                 <p>Wellcome back you&apos;ve been missed!</p>
               </div>
               <form className="input-box">
-                <div className="username-container">
-                  <Inputfield
-                    type="text"
-                    placeholder="Enter username"
-                    className="username"
-                  />
-                </div>
-                <div className="password-container">
-                  <Inputfield
-                    type="password"
-                    placeholder="Password"
-                    className="password"
-                  />
-                  <img
-                    src={eye_slashLogo}
-                    alt="eye slashLogo"
-                    className="eye_slash"
-                  />
-                </div>
+                <Inputfield
+                  type="text"
+                  placeholder="Enter username"
+                  className="username"
+                />
+                <Inputfield
+                  type="password"
+                  placeholder="Password"
+                  className="password"
+                >
+                  <Eyeslash />
+                </Inputfield>
                 <div className="recovery-password">
                   <button className="recovery-button" href="#">
                     Recovery Password
@@ -68,7 +62,6 @@ function App() {
                   <Button className="logo">
                     <img src={gmailLogo} alt="gmailLogo" />
                   </Button>
-
                   <Button className="logo">
                     <img src={appleLogo} alt="appleLogo" />
                   </Button>
