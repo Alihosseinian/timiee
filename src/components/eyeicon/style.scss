@@ -1,12 +1,16 @@
-.icon {
+.btn {
+display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  cursor: pointer;
+  // border: none;
   .eye_slash {
-    position: absolute;
-    right: 15px;
-
+    position: relative;
+    right: 0;
     &:hover {
       filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
         brightness(104%) contrast(97%);
-      cursor: pointer;
     }
   }
 }

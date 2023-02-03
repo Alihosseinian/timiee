@@ -1,12 +1,26 @@
 import React from "react";
-import "./style.scss";
+import { useState } from "react";
 import eye_slashLogo from "../../assets/eye-slash.svg";
+import eyeLogo from "../../assets/eye.svg";
+import "./style.scss";
 
 const Eyeslash = () => {
+  const [check, setCheck] = useState(true);
+
+  const toggle = () => {
+    setCheck((check) => !check);
+    if (check === true) {
+      return <img src={eye_slashLogo} className="eye_slash" />;
+    } else {
+      return <img src={eyeLogo} className="eye_slash" />;
+    }
+  };
+
   return (
-    <div className="icon">
-      <img src={eye_slashLogo} alt="eye slashLogo" className="eye_slash" />;
-    </div>
+    <button className="btn" onClick={toggle}>
+      <img src={eye_slashLogo} className="eye_slash" />
+      {check && <img src={eyeLogo} className="eye_slash" />}
+    </button>
   );
 };
 

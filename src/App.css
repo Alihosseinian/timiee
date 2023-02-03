@@ -102,6 +102,17 @@ p {
   margin-top: 10px;
 }
 
+.password_container{
+  width: 100%;
+  position: relative;
+}
+.btn{
+  position: absolute;
+  top: 35%;
+  right: 10px;
+  
+
+}
 
 .submit {
   border: none;

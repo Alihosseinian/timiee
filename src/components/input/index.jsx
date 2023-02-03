@@ -11,9 +11,8 @@ const Inputfield = (props) => {
         className={props.className}
         value={props.value}
         required
-      >
-        {props.children}
-      </input>
+      ></input>
+      {props.children}
     </div>
   );
 };
