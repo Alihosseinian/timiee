@@ -9,17 +9,11 @@ const Eyeslash = () => {
 
   const toggle = () => {
     setCheck((check) => !check);
-    if (check === true) {
-      return <img src={eye_slashLogo} className="eye_slash" />;
-    } else {
-      return <img src={eyeLogo} className="eye_slash" />;
-    }
   };
 
   return (
     <button className="btn" onClick={toggle}>
-      <img src={eye_slashLogo} className="eye_slash" />
-      {check && <img src={eyeLogo} className="eye_slash" />}
+      <img src={check ? eye_slashLogo : eyeLogo} className="eye_slash" />
     </button>
   );
 };
