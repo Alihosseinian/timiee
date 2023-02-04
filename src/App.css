@@ -61,7 +61,15 @@
 
 .login-form {
   width: 50%;
-  margin: 10px;
+  padding: 10px;
+  display: none;
+}
+.sign-up-form{
+  width: 50%;
+  padding: 10px;
+  order: -1;
+  /* display: none; */
+
 }
 
 .question {
@@ -77,6 +85,12 @@
   color: rgb(85, 85, 250);
   margin-left: 5px;
 }
+
+
+#question{
+    text-align: center;
+}
+
 .section{
   width: 90%;
   padding: 0px 10px;
@@ -175,6 +189,10 @@ p {
   justify-content: center;
   align-items: center;
 }
+
+
+
+
 .tittle-continue{
   width: 100%;
    margin: 20px auto;
@@ -214,6 +232,16 @@ background-image: linear-gradient( to right top, #dadfe7, #dbe1ea, #dbe2ec, #dce
   justify-content: center;
   align-items: center;
 }
+.icon-signup{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
 
 .logo:hover {
     background-color: white;

@@ -40,8 +40,9 @@ function App() {
                     type="password"
                     placeholder="Password"
                     className="password"
-                  ></Inputfield>
-                  <Eyeslash />
+                  >
+                    <Eyeslash />
+                  </Inputfield>
                 </div>
                 <div className="recovery-password">
                   <button className="recovery-button" href="#">
@@ -69,6 +70,61 @@ function App() {
                     <img src={facebookLogo} alt="facebookLogo" />
                   </Button>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="sign-up-form">
+          <div className="form">
+            <div className="section">
+              <div className="title">
+                <h2>Create an account!</h2>
+                <p>Lets get started with your 30 day free trial!</p>
+              </div>
+              <form className="input-box">
+                <Inputfield
+                  type="text"
+                  placeholder="Name"
+                  className="username"
+                />
+                <Inputfield
+                  type="email"
+                  placeholder="Email"
+                  className="username"
+                />
+                <Inputfield
+                  type="password"
+                  placeholder="Password"
+                  className="password"
+                >
+                  <Eyeslash />
+                </Inputfield>
+                <Button className="submit" type="submit">
+                  Create account
+                </Button>
+              </form>
+              <div className="icon-signup">
+                <Button className="logo">
+                  <img src={facebookLogo} alt="facebookLogo" />
+                  <span>Sign up with Facebok</span>
+                </Button>
+                <Button className="logo">
+                  <img src={gmailLogo} alt="gmailLogo" />
+                  <span>Sign up with Google</span>
+                </Button>
+                <Button className="logo">
+                  <img src={appleLogo} alt="appleLogo" />
+                  <span>Sign up with Apple</span>
+                </Button>
+              </div>
+
+              <div id="question" className="question">
+                <span>
+                  َAlready Have an account?
+                  <a className="register" href="#">
+                    Login now
+                  </a>
+                </span>
               </div>
             </div>
           </div>
