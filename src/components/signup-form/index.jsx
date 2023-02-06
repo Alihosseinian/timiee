@@ -7,57 +7,43 @@ import facebookLogo from "../../assets/facebook_icon.svg";
 import Inputfield from "../input/index";
 import Button from "../button/index";
 import Social from "../icon/social/index";
-
 import "./style.scss";
 
-const LoginForm = () => {
+const SignupForm = () => {
   return (
-    <div className="login-form">
-      <div className="question">
-        <span>
-          Not a member?
-          <a className="register" href="#">
-            Resgister now
-          </a>
-        </span>
-      </div>
+    <div className="sign-up-form">
       <div className="form">
         <div className="section">
           <div className="title">
-            <h2>Hello Again!</h2>
-            <p>Wellcome back you&apos;ve been missed!</p>
+            <h2>Create an account!</h2>
+            <p>Lets get started with your 30 day free trial!</p>
           </div>
           <form className="input-box">
-            <Inputfield
-              type="text"
-              placeholder="Enter username"
-              className="username"
-            />
+            <Inputfield type="text" placeholder="Name" className="username" />
+            <Inputfield type="email" placeholder="Email" className="username" />
             <Inputfield
               type="password"
               placeholder="Password"
               className="password"
               isPassword
             />
-            <div className="recovery-password">
-              <a className="recovery-link" href="#">
-                Recovery Password
-              </a>
-            </div>
             <Button className="submit" type="submit">
-              Sign In
+              Create account
             </Button>
           </form>
           <div className="footer">
-            <div className="tittle-continue">
-              <span className="line">
-                <span className="inner">Or continue with</span>
-              </span>
-            </div>
             <div className="icon">
               <Social className="logo" src={gmailLogo} alt="gmailLogo" />
               <Social className="logo" src={appleLogo} alt="gmailLogo" />
               <Social className="logo" src={facebookLogo} alt="gmailLogo" />
+            </div>
+            <div id="question" className="question">
+              <span>
+                Already Have an account?
+                <a className="register" href="#">
+                  Login now
+                </a>
+              </span>
             </div>
           </div>
         </div>
@@ -66,4 +52,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default SignupForm;
