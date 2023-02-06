@@ -57,18 +57,23 @@
   background-image: url("./pic.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  /* position: absolute;
+  z-index: 2;
+  right: 0;
+  transition: 0.2s; */
+
 }
 
 .login-form {
   width: 50%;
   padding: 10px;
-  display: none;
+  /* display: none; */
 }
 .sign-up-form{
   width: 50%;
   padding: 10px;
   order: -1;
-  /* display: none; */
+  display: none;
 
 }
 
@@ -83,12 +88,15 @@
 .question a {
   text-decoration: none;
   color: rgb(85, 85, 250);
-  margin-left: 5px;
+  margin: 20px 5px
+} 
+.question a:hover{
+ text-decoration-line: underline;
+  transition: 0.1s;
 }
 
-
 #question{
-    text-align: center;
+  text-align: center;
 }
 
 .section{
@@ -113,43 +121,27 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin: 10px 0px;
 }
 
-.password_container{
-  width: 100%;
-  position: relative;
-}
 .btn{
   position: absolute;
   top: 35%;
   right: 10px;
-  
-
 }
-
-.submit {
-  border: none;
-  width: 100%;
-  margin: 8px 0;
-  padding: 15px 15px;
-  border-radius: 8px;
-  color: gray;
-}
-
-
-
 
 .recovery-password {
   width: 100%;
   text-align: right;
+  margin-bottom: 20px;
 }
-.recovery-button:hover {
+
+.recovery-link:hover {
   text-decoration-line: underline;
   transition: 0.1s;
 }
 
-.recovery-password button {
+.recovery-password a {
   text-decoration: none;
   border: none;
   background-color: inherit;
@@ -160,28 +152,6 @@ p {
   cursor: pointer;
 }
 
-.submit {
-  background-color: #ea5143  ;
-  color: white;
-  box-shadow: 0 10px 25px -4px rgb(240, 155, 155);
-  opacity: 0.9;
-  cursor: pointer;
-  
-}
-.submit:active {
-  color: yellow;
-  text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.65);
-      
-}
-
-.submit:hover {
-  background-color: #ea5143  ;
-  opacity: 1;
-  box-shadow: 0 10px 25px -4px rgb(239, 69, 69);
-  transform: scale(1) ;
-
-}
-
 .footer {
   width: 100%;
   display: flex;
@@ -189,9 +159,6 @@ p {
   justify-content: center;
   align-items: center;
 }
-
-
-
 
 .tittle-continue{
   width: 100%;
@@ -225,33 +192,7 @@ background-image: linear-gradient( to right top, #dadfe7, #dbe1ea, #dbe2ec, #dce
   top: 50%;
 }
 
-
-.icon {
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.icon-signup{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-
-
-.logo:hover {
-    background-color: white;
-    font-size: 1em;
-    transform: scale(1.2);
-    transition: all 0.5s;
-  }
-
 /* // landsacape phone + <= 768  */
-
 @media only screen and (max-width: 768px) {
   .container {
     width: 400px;
@@ -280,7 +221,6 @@ background-image: linear-gradient( to right top, #dadfe7, #dbe1ea, #dbe2ec, #dce
 }
 
 /* //  phone + <= 576  */
-
 @media only screen and (max-width: 576px) {
   .container {
     width: 100%;

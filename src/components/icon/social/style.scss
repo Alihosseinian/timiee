@@ -1,0 +1,14 @@
+.icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+
+  .logo:hover {
+    background-color: white;
+    font-size: 1em;
+    transform: scale(1.2);
+    transition: all 0.5s;
+  }
+}

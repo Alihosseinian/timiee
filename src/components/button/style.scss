@@ -19,3 +19,26 @@
     transition: all 0.5s;
   }
 }
+.submit {
+  border: none;
+  width: 100%;
+  margin: 8px 0;
+  padding: 15px 15px;
+  background-color: #ea5143;
+  color: white;
+  box-shadow: 0 10px 25px -4px rgb(240, 155, 155);
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.submit:active {
+  color: yellow;
+  text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.65);
+}
+
+.submit:hover {
+  background-color: #ea5143;
+  opacity: 1;
+  box-shadow: 0 10px 25px -4px rgb(239, 69, 69);
+  transform: scale(1);
+}

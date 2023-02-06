@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
+import Eyeslash from "../icon/eye/index";
 import "./styles.scss";
 
 const Inputfield = (props) => {
@@ -11,8 +12,8 @@ const Inputfield = (props) => {
         className={props.className}
         value={props.value}
         required
-      ></input>
-      {props.children}
+      />
+      {props.isPassword && <Eyeslash />}
     </div>
   );
 };

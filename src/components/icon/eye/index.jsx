@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import eye_slashLogo from "../../assets/eye-slash.svg";
-import eyeLogo from "../../assets/eye.svg";
+import eye_slashLogo from "../../../assets/eye-slash.svg";
+import eyeLogo from "../../../assets/eye.svg";
 import "./style.scss";
 
 const Eyeslash = () => {
@@ -12,7 +12,7 @@ const Eyeslash = () => {
   };
 
   return (
-    <button className="btn" onClick={toggle}>
+    <button className="btn" onClick={toggle} type="button">
       <img src={check ? eye_slashLogo : eyeLogo} className="eye_slash" />
     </button>
   );

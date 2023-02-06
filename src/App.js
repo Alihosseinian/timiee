@@ -5,7 +5,7 @@ import facebookLogo from "./assets/facebook_icon.svg";
 
 import Inputfield from "./components/input/index";
 import Button from "./components/button/index";
-import Eyeslash from "./components/eyeicon/index";
+import Social from "./components/icon/social/index";
 
 import "./App.css";
 
@@ -35,19 +35,16 @@ function App() {
                   placeholder="Enter username"
                   className="username"
                 />
-                <div className="password_container">
-                  <Inputfield
-                    type="password"
-                    placeholder="Password"
-                    className="password"
-                  >
-                    <Eyeslash />
-                  </Inputfield>
-                </div>
+                <Inputfield
+                  type="password"
+                  placeholder="Password"
+                  className="password"
+                  isPassword
+                />
                 <div className="recovery-password">
-                  <button className="recovery-button" href="#">
+                  <a className="recovery-link" href="#">
                     Recovery Password
-                  </button>
+                  </a>
                 </div>
                 <Button className="submit" type="submit">
                   Sign In
@@ -60,15 +57,9 @@ function App() {
                   </span>
                 </div>
                 <div className="icon">
-                  <Button className="logo">
-                    <img src={gmailLogo} alt="gmailLogo" />
-                  </Button>
-                  <Button className="logo">
-                    <img src={appleLogo} alt="appleLogo" />
-                  </Button>
-                  <Button className="logo">
-                    <img src={facebookLogo} alt="facebookLogo" />
-                  </Button>
+                  <Social className="logo" src={gmailLogo} alt="gmailLogo" />
+                  <Social className="logo" src={appleLogo} alt="gmailLogo" />
+                  <Social className="logo" src={facebookLogo} alt="gmailLogo" />
                 </div>
               </div>
             </div>
@@ -96,35 +87,26 @@ function App() {
                   type="password"
                   placeholder="Password"
                   className="password"
-                >
-                  <Eyeslash />
-                </Inputfield>
+                  isPassword
+                />
                 <Button className="submit" type="submit">
                   Create account
                 </Button>
               </form>
-              <div className="icon-signup">
-                <Button className="logo">
-                  <img src={facebookLogo} alt="facebookLogo" />
-                  <span>Sign up with Facebok</span>
-                </Button>
-                <Button className="logo">
-                  <img src={gmailLogo} alt="gmailLogo" />
-                  <span>Sign up with Google</span>
-                </Button>
-                <Button className="logo">
-                  <img src={appleLogo} alt="appleLogo" />
-                  <span>Sign up with Apple</span>
-                </Button>
-              </div>
-
-              <div id="question" className="question">
-                <span>
-                  َAlready Have an account?
-                  <a className="register" href="#">
-                    Login now
-                  </a>
-                </span>
+              <div className="footer">
+                <div className="icon">
+                  <Social className="logo" src={gmailLogo} alt="gmailLogo" />
+                  <Social className="logo" src={appleLogo} alt="gmailLogo" />
+                  <Social className="logo" src={facebookLogo} alt="gmailLogo" />
+                </div>
+                <div id="question" className="question">
+                  <span>
+                    Already Have an account?
+                    <a className="register" href="#">
+                      Login now
+                    </a>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
