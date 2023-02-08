@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 
 import appleLogo from "../../assets/apple_icon.svg";
@@ -9,9 +10,12 @@ import Button from "../button/index";
 import Social from "../icon/social/index";
 import "./style.scss";
 
-const SignupForm = () => {
+const SignupForm = (props) => {
   return (
-    <div className="sign-up-form">
+    <div
+      className="sign-up-form"
+      style={{ opacity: props.page == "signup" ? 1 : 0 }}
+    >
       <div className="form">
         <div className="section">
           <div className="title">
@@ -40,7 +44,7 @@ const SignupForm = () => {
             <div id="question" className="question">
               <span>
                 Already Have an account?
-                <a className="register" href="#">
+                <a className="register" href="#" onClick={props.handleClick}>
                   Login now
                 </a>
               </span>

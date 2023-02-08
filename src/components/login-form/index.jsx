@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-undef */
 import React from "react";
 
 import appleLogo from "../../assets/apple_icon.svg";
@@ -10,13 +12,16 @@ import Social from "../icon/social/index";
 
 import "./style.scss";
 
-const LoginForm = () => {
+const LoginForm = (props) => {
   return (
-    <div className="login-form">
+    <div
+      className="login-form"
+      style={{ opacity: props.page == "login" ? "100" : "0" }}
+    >
       <div className="question">
         <span>
-          Not a member?
-          <a className="register" href="#">
+          Not a member? &nbsp;
+          <a className="register" href="#" onClick={props.handleClick}>
             Resgister now
           </a>
         </span>

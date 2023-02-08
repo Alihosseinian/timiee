@@ -9,7 +9,7 @@ const Inputfield = (props) => {
   const toggle = () => {
     setCheck((check) => !check);
   };
-  props.isPassword;
+  // props.isPassword;
   const type = props.isPassword ? (check ? "password" : "text") : props.type;
   return (
     <div className="input_container">
