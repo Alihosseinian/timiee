@@ -3,10 +3,10 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 
-import LoginForm from "./components/login-form/index";
-import SignupForm from "./components/signup-form/index";
+import LoginForm from "../components/login-form/index";
+import SignupForm from "../components/signup-form/index";
 
-import "./App.css";
+import "./root.css";
 
 function App() {
   let [page, setIsShown] = useState("signup");
