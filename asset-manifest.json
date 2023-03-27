@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/timiee/static/css/main.c125b719.css",
-    "main.js": "/timiee/static/js/main.d9dcc55f.js",
+    "main.css": "/timiee/static/css/main.3f250ad5.css",
+    "main.js": "/timiee/static/js/main.5fe1d909.js",
     "static/js/787.28cb0dcd.chunk.js": "/timiee/static/js/787.28cb0dcd.chunk.js",
     "static/media/Mulish-VariableFont_wght.ttf": "/timiee/static/media/Mulish-VariableFont_wght.d8a9a18cece4ed88ac76.ttf",
     "static/media/5591276.jpg": "/timiee/static/media/5591276.349d39a70bf9447384a1.jpg",
@@ -10,14 +10,15 @@
     "static/media/google_icon.svg": "/timiee/static/media/google_icon.2a442053aaa9332fedb3ee53bae267e3.svg",
     "static/media/facebook_icon.svg": "/timiee/static/media/facebook_icon.7600da1121cc24359a75d627fba07e1f.svg",
     "static/media/apple_icon.svg": "/timiee/static/media/apple_icon.b61ea6f1b7f6e68adfad2a0ed2776ae0.svg",
-    "static/media/eye-slash.svg": "/timiee/static/media/eye-slash.3b1d24d45f36c63a871c70f8b74dbf62.svg",
+    "static/media/eye-slash.svg": "/timiee/static/media/eye-slash.71f5b1162ed3d9590a4f249179703752.svg",
     "index.html": "/timiee/index.html",
-    "main.c125b719.css.map": "/timiee/static/css/main.c125b719.css.map",
-    "main.d9dcc55f.js.map": "/timiee/static/js/main.d9dcc55f.js.map",
+    "static/media/chevron-right.svg": "/timiee/static/media/chevron-right.61c607bb99397366b3b25f0ea180d905.svg",
+    "main.3f250ad5.css.map": "/timiee/static/css/main.3f250ad5.css.map",
+    "main.5fe1d909.js.map": "/timiee/static/js/main.5fe1d909.js.map",
     "787.28cb0dcd.chunk.js.map": "/timiee/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c125b719.css",
-    "static/js/main.d9dcc55f.js"
+    "static/css/main.3f250ad5.css",
+    "static/js/main.5fe1d909.js"
   ]
 }
