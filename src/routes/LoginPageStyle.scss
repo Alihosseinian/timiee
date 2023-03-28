@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'mulish';
+  src: url('../assets/fonts/Mulish/Mulish-Italic-VariableFont_wght.ttf');
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'mulish';
+}
+.page::after {
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/5591276.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(5px);
+  position: absolute;
+  z-index: 0;
+}
+
+.container {
+  width: 700px;
+  height: 590px;
+  padding: 5px 0px;
+  font-family: 'mulish';
+  border: 2px solid white;
+  border-radius: 35px;
+  background-image: linear-gradient(
+    to right top,
+    #dadfe7,
+    #dbe1ea,
+    #dbe2ec,
+    #dce4ef,
+    #dde5f2
+  );
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.container * {
+  transition: 0.5s all;
+}
+.image-box {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-image: url('../assets/pic.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  transform: scale(0.98);
+  left: 0;
+  transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.signup {
+  transform: translateX(100%) scale(0.98);
+}
+
+.btn {
+  position: absolute;
+  top: 35%;
+  right: 10px;
+}
+
+/* // landsacape phone + <= 768  */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 400px;
+    justify-content: center;
+  }
+
+  .image-box {
+    display: none;
+  }
+
+  .Loginform {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .form {
+    order: 1;
+  }
+  .question {
+    order: 2;
+  }
+}
+
+/* //  phone + <= 576  */
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}

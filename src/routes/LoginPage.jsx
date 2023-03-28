@@ -1,14 +1,12 @@
-/* eslint-disable no-dupe-else-if */
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
+import React from "react";
 import { useState } from "react";
 
-import LoginForm from "../components/login-form/index";
-import SignupForm from "../components/signup-form/index";
+import LoginForm from "../components/Loginform/index";
+import SignupForm from "../components/Signupform/index";
 
-import "./root.css";
+import "./LoginPageStyle.scss";
 
-function App() {
+const LoginPage = () => {
   let [page, setIsShown] = useState("signup");
 
   const handleClick = () => {
@@ -18,7 +16,6 @@ function App() {
       setIsShown("signup");
     }
   };
-
   return (
     <div className="page">
       <div className="container">
@@ -32,5 +29,6 @@ function App() {
       </div>
     </div>
   );
-}
-export default App;
+};
+
+export default LoginPage;

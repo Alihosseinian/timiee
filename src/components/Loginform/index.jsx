@@ -15,7 +15,7 @@ import "./style.scss";
 const LoginForm = (props) => {
   return (
     <div
-      className="login-form"
+      className="Loginform"
       style={{ opacity: props.page == "login" ? "100" : "0" }}
     >
       <div className="question">
