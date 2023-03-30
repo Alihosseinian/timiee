@@ -12,7 +12,7 @@ const App = () => (
     <Routes>
       <Route exact path="/" element={<Loginpage />} />
       <Route path="/list" element={<ListPage />} />
-      <Route path="/table" element={<TablePage />} />
+      <Route path="/table/:eventname" element={<TablePage />} />
     </Routes>
   </Router>
 );

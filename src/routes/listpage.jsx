@@ -1,57 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
+import Modal from "../components/Modal/index";
+
 import "./ListPageStyle.scss";
-import Social from "../components/icon/social/index";
-import right from "../assets/chevron-right.svg";
 
 const ListPage = () => {
+  const [show, setisshow] = useState("false");
+
+  const handleClick = () => {
+    if (show === "false") {
+      setisshow("true");
+    } else if (show === "true") {
+      setisshow("false");
+    }
+  };
+
+  const events = [
+    { id: "1", name: "footbal" },
+    { id: "2", name: "handball" },
+    { id: "3", name: "basketball" },
+    { id: "4", name: "baceball" },
+    { id: "5", name: "voleyball" },
+  ];
+
+  const listitem = events.map((event, index) => (
+    <li className="listitem" key={index}>
+      <Link to={"/table" + `/${event.name}`}>
+        <p>{event.name}</p>
+      </Link>
+    </li>
+  ));
   return (
     <div className="listpage">
       <div className="addbtn">
-        <button className="botton">add</button>
+        <button onClick={handleClick} className="botton">
+          add
+        </button>
+        <Modal className={show === "false" ? "hidden" : "show"} />
       </div>
       <div>
-        <ul className="list">
-          <li className="listitem">
-            <p>ali</p>
-            <Social className="logo" src={right} />
-          </li>
-          <li className="listitem">
-            <p>ata</p>
-            <Social className="logo" src={right} />
-          </li>
-          <li className="listitem">
-            <p>parham</p>
-            <Social className="logo" src={right} />
-          </li>
-          <li className="listitem">
-            <p>shahab</p>
-            <Social className="logo" src={right} />
-          </li>
-          <li className="listitem">
-            <p>alilog</p>
-            <Social className="logo" src={right} />
-          </li>
-          <li className="listitem">
-            <p>heidye</p>
-            <Social className="logo" src={right} />
-          </li>
-          <li className="listitem">
-            <p>yasi</p>
-            <Social className="logo" src={right} />
-          </li>
-          <li className="listitem">
-            <p>kimia</p>
-            <Social className="logo" src={right} />
-          </li>
-          <li className="listitem">
-            <p>mahtab</p>
-            <Social className="logo" src={right} />
-          </li>
-          <li className="listitem">
-            <p>amir</p>
-            <Social className="logo" src={right} />
-          </li>
-        </ul>
+        <ul className="list">{listitem}</ul>
       </div>
     </div>
   );

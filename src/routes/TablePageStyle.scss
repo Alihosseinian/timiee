@@ -1,0 +1,35 @@
+.tablepage {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .table {
+    border-collapse: collapse;
+    border-spacing: 10px;
+
+    table,
+    tr,
+    td {
+      border: 2px solid;
+    }
+
+    tr,
+    td {
+      padding: 25px;
+    }
+    td {
+      text-align: center;
+    }
+
+    .checkevent {
+      display: flex;
+      justify-content: space-evenly;
+
+      .event {
+        margin: 10px;
+      }
+    }
+  }
+}

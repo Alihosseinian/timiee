@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import "./style.scss";
 import Button from "../../button/index";
+
+import "./style.scss";
 
 const Social = (props) => {
   return (

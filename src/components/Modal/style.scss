@@ -1,0 +1,15 @@
+.modal {
+  width: 90%;
+  height: 80vh;
+  border: 2px solid;
+  border-radius: 20px;
+  background-color: white;
+  position: fixed;
+  padding: 20px;
+  transition: 1s all;
+  top: 30px;
+  // margin-top: 150px;
+}
+.hidden {
+  display: none;
+}
