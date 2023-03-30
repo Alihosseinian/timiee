@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+// import React from "react";
 import { useLocation } from "react-router-dom";
 
 import "./TablePageStyle.scss";
@@ -22,34 +23,37 @@ const tablepage = () => {
     8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24,
   ];
 
-  // const houritems = hours.map((hour, index) => <td key={index}>{hour}</td>);
-  // const nullitem = hours.map((hour, index) => (
-  //   <td key={index}>
-  //     <div className="checkevent">
-  //       <p className="event">...</p>
-  //       <input
-  //         type="checkbox"
-  //         // defaultChecked={this.state.chkbox}
-  //         // onChange={this.handleChangeChk}
-  //       />
-  //     </div>
-  //   </td>
-  // ));
+  const [events, setevents] = useState([]);
+  console.log(events);
 
-  const dayitems = days.map((day, index) => (
-    <tr key={index}>
-      <td>{day}</td>
-      {index == 0
-        ? hours.map((hour, index) => <td key={index}>{hour}</td>)
-        : hours.map((hour, index) => <td key={index}></td>)}
-    </tr>
-  ));
+  const handleChange = (day, hour) => {
+    setevents([...events, { day: day, hour: hour }]);
+    console.log(events);
+  };
 
   return (
     <div className="tablepage">
       <h3>this table for {event} </h3>
       <table className="table">
-        <tbody>{dayitems}</tbody>
+        <tbody>
+          {days.map((day) => (
+            <tr key={day}>
+              <td>{day}</td>
+              {hours.map((hour) =>
+                day === "" ? (
+                  <td key={hour}>{hour}</td>
+                ) : (
+                  <td key={hour}>
+                    <input
+                      type="checkbox"
+                      onChange={() => handleChange(day, hour)}
+                    />
+                  </td>
+                )
+              )}
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   );
