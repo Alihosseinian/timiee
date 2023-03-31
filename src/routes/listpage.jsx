@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import Modal from "../components/Modal/index";
-
+import Form from "../components/Form/index";
 import "./ListPageStyle.scss";
 
 const ListPage = () => {
@@ -24,8 +24,8 @@ const ListPage = () => {
     { id: "5", name: "voleyball" },
   ];
 
-  const listitem = events.map((event, index) => (
-    <li className="listitem" key={index}>
+  const listitem = events.map((event) => (
+    <li className="listitem" key={event.id}>
       <Link to={"/table" + `/${event.name}`}>
         <p>{event.name}</p>
       </Link>
@@ -37,7 +37,9 @@ const ListPage = () => {
         <button onClick={handleClick} className="botton">
           add
         </button>
-        <Modal className={show === "false" ? "hidden" : "show"} />
+        <Modal className={show === "false" ? "hidden" : "show"}>
+          <Form />
+        </Modal>
       </div>
       <div>
         <ul className="list">{listitem}</ul>

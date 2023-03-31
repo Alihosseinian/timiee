@@ -26,8 +26,14 @@ const tablepage = () => {
   const [events, setevents] = useState([]);
   console.log(events);
 
-  const handleChange = (day, hour) => {
-    setevents([...events, { day: day, hour: hour }]);
+  const handleChange = (Day, Hour) => {
+    const find = events.find((item) => item.day === Day && item.hour === Hour);
+    if (find != undefined) {
+      var find_index = events.findIndex((item) => item === find);
+    }
+    !find
+      ? setevents([...events, { day: Day, hour: Hour }])
+      : events.splice(find_index, 1);
     console.log(events);
   };
 
@@ -46,7 +52,9 @@ const tablepage = () => {
                   <td key={hour}>
                     <input
                       type="checkbox"
-                      onChange={() => handleChange(day, hour)}
+                      onChange={() => {
+                        handleChange(day, hour);
+                      }}
                     />
                   </td>
                 )
