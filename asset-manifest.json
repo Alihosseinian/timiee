@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/timiee/static/css/main.1885806a.css",
-    "main.js": "/timiee/static/js/main.cfe32d8f.js",
+    "main.css": "/timiee/static/css/main.17bd327d.css",
+    "main.js": "/timiee/static/js/main.5566dc79.js",
     "static/js/787.28cb0dcd.chunk.js": "/timiee/static/js/787.28cb0dcd.chunk.js",
     "static/media/Mulish-Italic-VariableFont_wght.ttf": "/timiee/static/media/Mulish-Italic-VariableFont_wght.8facd12ec40a9e4fb30c.ttf",
     "static/media/5591276.jpg": "/timiee/static/media/5591276.349d39a70bf9447384a1.jpg",
@@ -12,13 +12,12 @@
     "static/media/apple_icon.svg": "/timiee/static/media/apple_icon.b61ea6f1b7f6e68adfad2a0ed2776ae0.svg",
     "static/media/eye-slash.svg": "/timiee/static/media/eye-slash.71f5b1162ed3d9590a4f249179703752.svg",
     "index.html": "/timiee/index.html",
-    "static/media/chevron-right.svg": "/timiee/static/media/chevron-right.61c607bb99397366b3b25f0ea180d905.svg",
-    "main.1885806a.css.map": "/timiee/static/css/main.1885806a.css.map",
-    "main.cfe32d8f.js.map": "/timiee/static/js/main.cfe32d8f.js.map",
+    "main.17bd327d.css.map": "/timiee/static/css/main.17bd327d.css.map",
+    "main.5566dc79.js.map": "/timiee/static/js/main.5566dc79.js.map",
     "787.28cb0dcd.chunk.js.map": "/timiee/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1885806a.css",
-    "static/js/main.cfe32d8f.js"
+    "static/css/main.17bd327d.css",
+    "static/js/main.5566dc79.js"
   ]
 }
