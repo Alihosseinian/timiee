@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.scss";
 
-const Form = () => {
+const Form = (props) => {
   const [eventname, seteventname] = useState("");
 
   const handleSubmit = (event) => {
@@ -22,6 +22,9 @@ const Form = () => {
           }}
         />
         <button className="submit">submit</button>
+        <button className="submit" onClick={props.handletoggle}>
+          cancle
+        </button>
       </form>
     </div>
   );
