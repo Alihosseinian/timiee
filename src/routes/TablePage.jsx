@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 import "./TablePageStyle.scss";
 const tablepage = () => {
@@ -63,6 +63,11 @@ const tablepage = () => {
           ))}
         </tbody>
       </table>
+      <div className="backwardbtn">
+        <Link to="/list">
+          <button className="botton">back</button>
+        </Link>
+      </div>
     </div>
   );
 };
