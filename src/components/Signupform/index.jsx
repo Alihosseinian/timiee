@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
+import { Link } from "react-router-dom";
 
 import appleLogo from "../../assets/apple_icon.svg";
 import gmailLogo from "../../assets/google_icon.svg";
@@ -31,9 +32,11 @@ const SignupForm = (props) => {
               className="password"
               isPassword
             />
-            <Button className="submit" type="submit">
-              Create account
-            </Button>
+            <Link to="/list" className="link">
+              <Button className="submit" type="submit">
+                Create account
+              </Button>
+            </Link>
           </form>
           <div className="footer">
             <div className="icon">

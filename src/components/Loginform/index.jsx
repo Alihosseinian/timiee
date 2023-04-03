@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-undef */
 import React from "react";
+import { Link } from "react-router-dom";
 
 import appleLogo from "../../assets/apple_icon.svg";
 import gmailLogo from "../../assets/google_icon.svg";
@@ -49,9 +50,11 @@ const LoginForm = (props) => {
                 Recovery Password
               </a>
             </div>
-            <Button className="submit" type="submit">
-              Sign In
-            </Button>
+            <Link to="/list" className="link">
+              <Button className="submit" type="submit">
+                Sign In
+              </Button>
+            </Link>
           </form>
           <div className="footer">
             <div className="tittle-continue">
